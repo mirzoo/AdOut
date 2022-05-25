@@ -1,0 +1,57 @@
+.features
+    &-wrap
+
+    &-title
+        flex-basis: 100%
+        margin-bottom: 32px
+        font-weight: 800
+        font-size: 56px
+        line-height: 66px
+        text-align: center
+        color: #71B2CF
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-item
+        text-align: center
+        width: 310px
+        &__title
+            font-weight: 700
+            font-size: 32px
+            line-height: 38px
+            color: #FFFFFF
+        &__subtitle
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: #71B2CF
+
+
+@media (max-width: 768px)
+    .features
+        &-content
+            flex-direction: column
+        &-item
+            margin-bottom: 32px
+            &__title
+                margin-bottom: 16px
+
+
+@media (max-width: 425px)
+    .features
+        &-title
+            font-weight: 800
+            font-size: 32px
+            line-height: 38px
+        &-content
+            flex-direction: column
+        &-item
+            &__title
+                font-weight: 700
+                font-size: 24px
+                line-height: 29px
+            &__subtitle
+                font-weight: 400
+                font-size: 18px
+                line-height: 21px

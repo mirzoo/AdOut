@@ -1,0 +1,58 @@
+.main
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        padding: 150px 16px
+    &-text
+        display: flex
+        flex-direction: column
+        &__title
+            font-weight: 800
+            font-size: 56px
+            line-height: 66px
+            color: #71B2CF
+        &__subtitle
+            max-width: 472px
+            margin-top: 32px
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: #ffffff
+        &__button
+            margin-top: 32px
+
+
+
+@media (max-width: 768px)
+    .main
+        &-wrap
+            flex-direction: column
+            text-align: center
+        &-text
+            margin-top: 32px
+            &__subtitle
+                margin-top: 16px
+            &__button
+                margin-top: 45px
+        &-content
+            order: -1
+
+@media (max-width: 425px)
+     .main
+        &-text
+            &__title
+                font-size: 32px
+                line-height: 38px
+            &__subtitle
+                font-size: 18px
+                line-height: 21px
+                margin-top: 16px
+            &__button
+                margin-top: 24px
+        &-content
+            width: 288px
+
+
+
